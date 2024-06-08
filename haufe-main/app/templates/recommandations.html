@@ -1,0 +1,19 @@
+
+<section id="recommendations" class="recommendations-section">
+    <head>
+        <link rel="stylesheet" href="../static/recommandations.css">
+    </head>
+    <h2>Post a Recommendation</h2>
+    <form id="recommendation-form">
+        <input type="text" id="link" placeholder="Link" required>
+        <input type="text" id="message" placeholder="Message" required>
+        <input type="text" id="viewed-at" placeholder="Where Viewed" required>
+        <input type="number" id="rating" placeholder="Rating (1-5)" required min="1" max="5">
+        <input type="text" id="poster" placeholder="Poster URL" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="recommendations-list" class="recommendations-list">
+        <!-- Recommendations will be dynamically added here -->
+    </div>
+    <script src="../static/app.js"></script>
+</section>

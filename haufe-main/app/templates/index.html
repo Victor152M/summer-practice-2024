@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Recommendations</h1>
+            <nav>
+                <ul>
+                    <li><a href="/recommendations">Recommendations</a></li>
+                    <li><a href="/groups">Groups</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="home-section">
+                <p>Share and discover great movies and TV shows with your friends!</p>
+            </section>
+            <section id="recommendations" class="recommendations-section">
+                <h2>Post a Recommendation</h2>
+                <form id="recommendation-form">
+                    <input type="text" id="link" placeholder="Link" required>
+                    <input type="text" id="message" placeholder="Message" required>
+                    <input type="text" id="viewed-at" placeholder="Where Viewed" required>
+                    <input type="number" id="rating" placeholder="Rating (1-5)" required min="1" max="5">
+                    <input type="text" id="poster" placeholder="Poster URL" required>
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="recommendations-list" class="recommendations-list">
+                    <!-- Recommendations will be dynamically added here -->
+                </div>
+            </section>
+            <section id="groups" class="groups-section">
+                <h2>Create a Group</h2>
+                <form id="group-form">
+                    <input type="text" id="group-name" placeholder="Group Name" required>
+                    <button type="submit">Create Group</button>
+                </form>
+                <div id="groups-list" class="groups-list">
+                    <!-- Groups will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Movie Recommendation App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="../static/app.js"></script>
+</body>
+</html>
